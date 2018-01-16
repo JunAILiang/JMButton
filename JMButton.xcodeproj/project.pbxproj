@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB03942320051B7100B9321A /* JMBaseButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB03942220051B7100B9321A /* JMBaseButtonConfig.m */; };
+		CB039429200529FC00B9321A /* JMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB039428200529FC00B9321A /* JMBaseButton.m */; };
+		CB2FE55520061CAA001C4A14 /* JMBootstrapButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2FE55420061CAA001C4A14 /* JMBootstrapButtonConfig.m */; };
+		CB2FE55820061CD2001C4A14 /* JMBootstrapButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2FE55720061CD2001C4A14 /* JMBootstrapButton.m */; };
+		CB49FE0E20060FEB00FCCBD7 /* JMBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */; };
+		CB9CDA58200BA5530029D42F /* JMBadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9CDA56200BA5530029D42F /* JMBadgeValue.m */; };
+		CB9CDA5B200BA57B0029D42F /* UIColor+JM.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9CDA5A200BA57B0029D42F /* UIColor+JM.m */; };
+		CB9CDA5E200BADAC0029D42F /* JMBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9CDA5D200BADAC0029D42F /* JMBadgeViewController.m */; };
+		CB9CDAC1200D009C0029D42F /* JMBootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9CDAC0200D009C0029D42F /* JMBootstrapViewController.m */; };
+		CBA664BD200360DD009F12D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA664BC200360DD009F12D3 /* AppDelegate.m */; };
+		CBA664C0200360DD009F12D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA664BF200360DD009F12D3 /* ViewController.m */; };
+		CBA664C3200360DD009F12D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA664C1200360DD009F12D3 /* Main.storyboard */; };
+		CBA664C5200360DD009F12D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA664C4200360DD009F12D3 /* Assets.xcassets */; };
+		CBA664C8200360DD009F12D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA664C6200360DD009F12D3 /* LaunchScreen.storyboard */; };
+		CBA664CB200360DD009F12D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA664CA200360DD009F12D3 /* main.m */; };
+		CBC4461D2003629B00A2ACD2 /* JMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC4461C2003629B00A2ACD2 /* JMButton.m */; };
+		CBC446232003648E00A2ACD2 /* JMRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC4461F2003648D00A2ACD2 /* JMRuntime.m */; };
+		CBC446242003648E00A2ACD2 /* UIView+JM.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC446202003648D00A2ACD2 /* UIView+JM.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB03942120051B7100B9321A /* JMBaseButtonConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBaseButtonConfig.h; sourceTree = "<group>"; };
+		CB03942220051B7100B9321A /* JMBaseButtonConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBaseButtonConfig.m; sourceTree = "<group>"; };
+		CB039427200529FC00B9321A /* JMBaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBaseButton.h; sourceTree = "<group>"; };
+		CB039428200529FC00B9321A /* JMBaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBaseButton.m; sourceTree = "<group>"; };
+		CB2FE55320061CAA001C4A14 /* JMBootstrapButtonConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBootstrapButtonConfig.h; sourceTree = "<group>"; };
+		CB2FE55420061CAA001C4A14 /* JMBootstrapButtonConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButtonConfig.m; sourceTree = "<group>"; };
+		CB2FE55620061CD2001C4A14 /* JMBootstrapButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBootstrapButton.h; sourceTree = "<group>"; };
+		CB2FE55720061CD2001C4A14 /* JMBootstrapButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButton.m; sourceTree = "<group>"; };
+		CB49FE0C20060FEA00FCCBD7 /* JMBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBasicViewController.h; sourceTree = "<group>"; };
+		CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBasicViewController.m; sourceTree = "<group>"; };
+		CB9CDA56200BA5530029D42F /* JMBadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBadgeValue.m; sourceTree = "<group>"; };
+		CB9CDA57200BA5530029D42F /* JMBadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBadgeValue.h; sourceTree = "<group>"; };
+		CB9CDA59200BA57B0029D42F /* UIColor+JM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JM.h"; sourceTree = "<group>"; };
+		CB9CDA5A200BA57B0029D42F /* UIColor+JM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JM.m"; sourceTree = "<group>"; };
+		CB9CDA5C200BADAC0029D42F /* JMBadgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBadgeViewController.h; sourceTree = "<group>"; };
+		CB9CDA5D200BADAC0029D42F /* JMBadgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBadgeViewController.m; sourceTree = "<group>"; };
+		CB9CDABF200D009C0029D42F /* JMBootstrapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBootstrapViewController.h; sourceTree = "<group>"; };
+		CB9CDAC0200D009C0029D42F /* JMBootstrapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapViewController.m; sourceTree = "<group>"; };
+		CBA664B8200360DD009F12D3 /* JMButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA664BB200360DD009F12D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBA664BC200360DD009F12D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBA664BE200360DD009F12D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBA664BF200360DD009F12D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBA664C2200360DD009F12D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBA664C4200360DD009F12D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBA664C7200360DD009F12D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBA664C9200360DD009F12D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA664CA200360DD009F12D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBC4461B2003629B00A2ACD2 /* JMButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMButton.h; sourceTree = "<group>"; };
+		CBC4461C2003629B00A2ACD2 /* JMButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMButton.m; sourceTree = "<group>"; };
+		CBC4461F2003648D00A2ACD2 /* JMRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRuntime.m; sourceTree = "<group>"; };
+		CBC446202003648D00A2ACD2 /* UIView+JM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JM.m"; sourceTree = "<group>"; };
+		CBC446212003648D00A2ACD2 /* UIView+JM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JM.h"; sourceTree = "<group>"; };
+		CBC446222003648D00A2ACD2 /* JMRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRuntime.h; sourceTree = "<group>"; };
+		CBC44625200364C700A2ACD2 /* JMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBA664B5200360DD009F12D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB2FE54E20061BF2001C4A14 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CB039427200529FC00B9321A /* JMBaseButton.h */,
+				CB039428200529FC00B9321A /* JMBaseButton.m */,
+				CB03942120051B7100B9321A /* JMBaseButtonConfig.h */,
+				CB03942220051B7100B9321A /* JMBaseButtonConfig.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB2FE54F20061C68001C4A14 /* BootstrapButton */ = {
+			isa = PBXGroup;
+			children = (
+				CB2FE55620061CD2001C4A14 /* JMBootstrapButton.h */,
+				CB2FE55720061CD2001C4A14 /* JMBootstrapButton.m */,
+				CB2FE55320061CAA001C4A14 /* JMBootstrapButtonConfig.h */,
+				CB2FE55420061CAA001C4A14 /* JMBootstrapButtonConfig.m */,
+			);
+			path = BootstrapButton;
+			sourceTree = "<group>";
+		};
+		CBA664AF200360DD009F12D3 = {
+			isa = PBXGroup;
+			children = (
+				CBA664BA200360DD009F12D3 /* JMButton */,
+				CBA664B9200360DD009F12D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA664B9200360DD009F12D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA664B8200360DD009F12D3 /* JMButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBA664BA200360DD009F12D3 /* JMButton */ = {
+			isa = PBXGroup;
+			children = (
+				CBC4461A2003628600A2ACD2 /* JMButton */,
+				CBA664BB200360DD009F12D3 /* AppDelegate.h */,
+				CBA664BC200360DD009F12D3 /* AppDelegate.m */,
+				CBA664BE200360DD009F12D3 /* ViewController.h */,
+				CBA664BF200360DD009F12D3 /* ViewController.m */,
+				CB49FE0C20060FEA00FCCBD7 /* JMBasicViewController.h */,
+				CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */,
+				CB9CDA5C200BADAC0029D42F /* JMBadgeViewController.h */,
+				CB9CDA5D200BADAC0029D42F /* JMBadgeViewController.m */,
+				CB9CDABF200D009C0029D42F /* JMBootstrapViewController.h */,
+				CB9CDAC0200D009C0029D42F /* JMBootstrapViewController.m */,
+				CBA664C1200360DD009F12D3 /* Main.storyboard */,
+				CBA664C4200360DD009F12D3 /* Assets.xcassets */,
+				CBA664C6200360DD009F12D3 /* LaunchScreen.storyboard */,
+				CBA664C9200360DD009F12D3 /* Info.plist */,
+				CBA664CA200360DD009F12D3 /* main.m */,
+			);
+			path = JMButton;
+			sourceTree = "<group>";
+		};
+		CBC4461A2003628600A2ACD2 /* JMButton */ = {
+			isa = PBXGroup;
+			children = (
+				CB2FE54F20061C68001C4A14 /* BootstrapButton */,
+				CB2FE54E20061BF2001C4A14 /* Base */,
+				CBC4461E2003648D00A2ACD2 /* JMCategroy */,
+				CBC4461B2003629B00A2ACD2 /* JMButton.h */,
+				CBC4461C2003629B00A2ACD2 /* JMButton.m */,
+				CB9CDA57200BA5530029D42F /* JMBadgeValue.h */,
+				CB9CDA56200BA5530029D42F /* JMBadgeValue.m */,
+			);
+			path = JMButton;
+			sourceTree = "<group>";
+		};
+		CBC4461E2003648D00A2ACD2 /* JMCategroy */ = {
+			isa = PBXGroup;
+			children = (
+				CBC44625200364C700A2ACD2 /* JMDefine.h */,
+				CBC446222003648D00A2ACD2 /* JMRuntime.h */,
+				CBC4461F2003648D00A2ACD2 /* JMRuntime.m */,
+				CBC446212003648D00A2ACD2 /* UIView+JM.h */,
+				CBC446202003648D00A2ACD2 /* UIView+JM.m */,
+				CB9CDA59200BA57B0029D42F /* UIColor+JM.h */,
+				CB9CDA5A200BA57B0029D42F /* UIColor+JM.m */,
+			);
+			path = JMCategroy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBA664B7200360DD009F12D3 /* JMButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA664CE200360DD009F12D3 /* Build configuration list for PBXNativeTarget "JMButton" */;
+			buildPhases = (
+				CBA664B4200360DD009F12D3 /* Sources */,
+				CBA664B5200360DD009F12D3 /* Frameworks */,
+				CBA664B6200360DD009F12D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMButton;
+			productName = JMButton;
+			productReference = CBA664B8200360DD009F12D3 /* JMButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBA664B0200360DD009F12D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = JM;
+				TargetAttributes = {
+					CBA664B7200360DD009F12D3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CBA664B3200360DD009F12D3 /* Build configuration list for PBXProject "JMButton" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBA664AF200360DD009F12D3;
+			productRefGroup = CBA664B9200360DD009F12D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBA664B7200360DD009F12D3 /* JMButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBA664B6200360DD009F12D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA664C8200360DD009F12D3 /* LaunchScreen.storyboard in Resources */,
+				CBA664C5200360DD009F12D3 /* Assets.xcassets in Resources */,
+				CBA664C3200360DD009F12D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBA664B4200360DD009F12D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9CDAC1200D009C0029D42F /* JMBootstrapViewController.m in Sources */,
+				CBC446232003648E00A2ACD2 /* JMRuntime.m in Sources */,
+				CB2FE55520061CAA001C4A14 /* JMBootstrapButtonConfig.m in Sources */,
+				CB49FE0E20060FEB00FCCBD7 /* JMBasicViewController.m in Sources */,
+				CB039429200529FC00B9321A /* JMBaseButton.m in Sources */,
+				CB2FE55820061CD2001C4A14 /* JMBootstrapButton.m in Sources */,
+				CB03942320051B7100B9321A /* JMBaseButtonConfig.m in Sources */,
+				CBC446242003648E00A2ACD2 /* UIView+JM.m in Sources */,
+				CBC4461D2003629B00A2ACD2 /* JMButton.m in Sources */,
+				CB9CDA58200BA5530029D42F /* JMBadgeValue.m in Sources */,
+				CB9CDA5E200BADAC0029D42F /* JMBadgeViewController.m in Sources */,
+				CBA664C0200360DD009F12D3 /* ViewController.m in Sources */,
+				CB9CDA5B200BA57B0029D42F /* UIColor+JM.m in Sources */,
+				CBA664CB200360DD009F12D3 /* main.m in Sources */,
+				CBA664BD200360DD009F12D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBA664C1200360DD009F12D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA664C2200360DD009F12D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBA664C6200360DD009F12D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA664C7200360DD009F12D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBA664CC200360DD009F12D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBA664CD200360DD009F12D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBA664CF200360DD009F12D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RL8S7JFUQ;
+				INFOPLIST_FILE = JMButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailaopo.JMButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CBA664D0200360DD009F12D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RL8S7JFUQ;
+				INFOPLIST_FILE = JMButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailaopo.JMButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBA664B3200360DD009F12D3 /* Build configuration list for PBXProject "JMButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA664CC200360DD009F12D3 /* Debug */,
+				CBA664CD200360DD009F12D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA664CE200360DD009F12D3 /* Build configuration list for PBXNativeTarget "JMButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA664CF200360DD009F12D3 /* Debug */,
+				CBA664D0200360DD009F12D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBA664B0200360DD009F12D3 /* Project object */;
+}
