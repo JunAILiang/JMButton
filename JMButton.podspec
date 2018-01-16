@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMButton"
-  s.version      = "0.1.1"
+  s.version      = "0.1"
   s.summary      = "超强自定义Button"
 
   s.description  = <<-DESC
