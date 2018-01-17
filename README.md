@@ -6,11 +6,11 @@
 * 支持CocoaPods
 
 # 一张图让你看懂JMButton结构
-![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButtonAll)
+![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButtonAll.png)
 
 # 版本
-2018-01-17 新增自定义View, 新增倒计时功能  
-2018-01-16 初始版本
+* 2018-01-17 新增自定义View, 新增倒计时功能  
+* 2018-01-16 初始版本
 
 # 演示
 ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton1.gif) ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton2.gif) ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton3.gif)
