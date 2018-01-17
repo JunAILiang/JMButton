@@ -12,7 +12,7 @@
 ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton1.gif) ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton2.gif)
 
 # 如何使用, 以Bootstrap样式为例
-* 通过CocoaPods导入 `pod 'JMButton', '~> 0.1.1'`
+* 通过CocoaPods导入 `pod 'JMButton', '~> 0.1'`
 * 手动导入 直接下载工程把 `JMButton` 文件夹导入到自己工程中
 1. 导入JMButton`#import "JMButton.h"`，
 2. 初始化JMBootstrapButtonConfig并配置属性
