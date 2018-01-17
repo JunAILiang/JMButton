@@ -12,6 +12,8 @@
 #import "JMBasicViewController.h"
 #import "JMBadgeViewController.h"
 #import "JMBootstrapViewController.h"
+#import "JMCountDownViewController.h"
+#import "JMCustomViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -29,7 +31,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式", nil];
+    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式",@"倒计时按钮功能",@"自定义View", nil];
     
     [self.view addSubview:self.tableView];
     
@@ -75,6 +77,12 @@
     } else if (indexPath.row == 2) {
         JMBootstrapViewController *bootstrapVC = [[JMBootstrapViewController alloc] init];
         [self.navigationController pushViewController:bootstrapVC animated:YES];
+    } else if (indexPath.row == 3) {
+        JMCountDownViewController *countDownVC = [[JMCountDownViewController alloc] init];
+        [self.navigationController pushViewController:countDownVC animated:YES];
+    } else if (indexPath.row == 4) {
+        JMCustomViewController *customVC = [[JMCustomViewController alloc] init];
+        [self.navigationController pushViewController:customVC animated:YES];
     }
 }
 

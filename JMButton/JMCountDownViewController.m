@@ -1,8 +1,8 @@
 //
-//  JMBootstrapViewController.m
+//  JMCountDownViewController.m
 //  JMButton
 //
-//  Created by JM on 2018/1/15.
+//  Created by JM on 2018/1/17.
 //  Copyright © 2018年 JM. All rights reserved.
 //
 /*
@@ -21,25 +21,25 @@
  blog: https://www.ljmvip.cn
  */
 
-#import "JMBootstrapViewController.h"
+#import "JMCountDownViewController.h"
 #import "JMButton.h"
 #import "JMDefine.h"
 #import "UIView+JM.h"
 
-@interface JMBootstrapViewController ()
+@interface JMCountDownViewController ()
 
 /** sv */
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @end
 
-@implementation JMBootstrapViewController
+@implementation JMCountDownViewController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"Bootstrap样式";
+    self.title = @"按钮倒计时功能";
     
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight, self.view.width, self.view.height - kNavigationBarHeight)];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -54,44 +54,12 @@
     
     CGFloat lastY = 0;
     
-    for (int i = 0; i < 11; i++) {
+    for (int i = 0; i < 1; i++) {
         JMBootstrapButtonConfig *buttonConfig = [JMBootstrapButtonConfig buttonConfig];
-        buttonConfig.titleFont = [UIFont systemFontOfSize:20.f];
         if (i == 0) {
-            buttonConfig.title = @"Default";
-            buttonConfig.bootstrapType = JMBootstrapTypeDefault;
-        } else if (i == 1) {
-            buttonConfig.title = @"Primary";
-            buttonConfig.bootstrapType = JMBootstrapTypePrimary;
-        } else if (i == 2) {
-            buttonConfig.title = @"Success";
-            buttonConfig.bootstrapType = JMBootstrapTypeSuccess;
-        } else if (i == 3) {
             buttonConfig.title = @"Info";
             buttonConfig.bootstrapType = JMBootstrapTypeInfo;
-        } else if (i == 4) {
-            buttonConfig.title = @"Danger";
-            buttonConfig.bootstrapType = JMBootstrapTypeDanger;
-        } else if (i == 5) {
-            buttonConfig.title = @"Warning";
-            buttonConfig.bootstrapType = JMBootstrapTypeWarning;
-        } else if (i == 6) {
-            buttonConfig.title = @"Maroon";
-            buttonConfig.bootstrapType = JMBootstrapTypeMaroon;
-        } else if (i == 7) {
-            buttonConfig.title = @"Purple";
-            buttonConfig.bootstrapType = JMBootstrapTypePurple;
-        } else if (i == 8) {
-            buttonConfig.title = @"Navy";
-            buttonConfig.bootstrapType = JMBootstrapTypeNavy;
-        } else if (i == 9) {
-            buttonConfig.title = @"Orange";
-            buttonConfig.bootstrapType = JMBootstrapTypeOrange;
-        } else if (i == 10) {
-            buttonConfig.title = @"Olive";
-            buttonConfig.bootstrapType = JMBootstrapTypeOlive;
         }
-        
         
         CGFloat X = (i % rank) * (W + rankMargin) + 10;
         NSUInteger Y = (i / rank) * (H +rowMargin);
@@ -110,7 +78,15 @@
 
 - (void)btnClick:(JMButton *)sender {
     JMLog(@"点击了第 %zd 个", sender.tag);
+    
+    //开始倒计时核心代码
+    JMBootstrapButton *bsBtn = (JMBootstrapButton*)sender;
+    [bsBtn startCountDown:6];
+//    [bsBtn startCountDown:5 Detail:@"哈哈"];
+//    bsBtn.countDownBackground = [UIColor redColor];
+//    bsBtn.countDownBorderColor = [UIColor blueColor];
+//    bsBtn.countDownDoneBackground = [UIColor orangeColor];
+//    bsBtn.countDownDoneBorderColor = [UIColor greenColor];
 }
-
 
 @end

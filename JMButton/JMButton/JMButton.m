@@ -37,9 +37,15 @@
 
 @implementation JMButton
 
+- (instancetype)initWithFrame:(CGRect)frame CustomView:(UIView *)customView {
+    if (self = [super initWithFrame:frame]) {
+        [self addSubview:customView];
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame ButtonConfig:(JMBaseButtonConfig *)buttonConfig {
     if (self = [super initWithFrame:frame]) {
-        
         self.baseButton.backgroundColor = buttonConfig.backgroundColor;
         self.baseButton.tag = self.tag;
         if ([buttonConfig isMemberOfClass:[JMBaseButtonConfig class]]) {

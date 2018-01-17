@@ -23,6 +23,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JMBadgeValue.h"
+#import "JMBaseButton+CountDown.h"
 #import "JMBaseButton.h"
 #import "JMBaseButtonConfig.h"
 #import "JMBootstrapButton.h"
@@ -30,7 +31,21 @@
 
 @interface JMButton : UIView
 
+
+/**
+ 初始化方法
+ @param frame frame
+ @param buttonConfig 按钮配置文件
+ */
 - (instancetype)initWithFrame:(CGRect)frame ButtonConfig:(JMBaseButtonConfig *)buttonConfig;
+
+
+/**
+ 初始化方法 (次初始化方法需要自己设定样式以及事件处理, 可高度自定义, 自定义view不支持角标属性)
+ @param frame frame
+ @param customView 自定义的View
+ */
+- (instancetype)initWithFrame:(CGRect)frame CustomView:(UIView *)customView;
 
 
 /**
