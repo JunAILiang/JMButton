@@ -3,13 +3,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMButton"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "超强自定义Button"
 
   s.description  = <<-DESC
-  					   * 自定义图片上下左右位置
-  					   * 自定义文字和图片间距
-  					   * 自定义角标动画
+  					   * 新增自定义View
+               * 新增倒计时功能
                    DESC
 
   s.homepage     = "https://github.com/JunAILiang/JMButton.git"
