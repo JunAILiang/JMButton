@@ -22,7 +22,7 @@
  */
 
 #import "JMCustomViewController.h"
-#import "JMButton.h"
+#import "JMButtons.h"
 
 @interface JMCustomViewController ()
 
@@ -34,6 +34,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"自定义View";
 
     
     UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 280, 100)];
@@ -56,6 +57,12 @@
     JMButton *customBtn = [[JMButton alloc] initWithFrame:CGRectMake(50, 100, 300, 120) CustomView:customView];
     customBtn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:customBtn];
+    
+    
+//    JMButton *customBtn1 = [JMButton alloc] initWithFrame:CGRectMake(50, 500, 80, 40) CustomView:<#(UIView *)#>
+    
+    
+    
 }
 
 - (void)btnClick {

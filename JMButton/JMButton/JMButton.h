@@ -28,33 +28,44 @@
 #import "JMBaseButtonConfig.h"
 #import "JMBootstrapButton.h"
 #import "JMBootstrapButtonConfig.h"
+#import "JMNumberButtonConfig.h"
 
 @interface JMButton : UIView
 
 
 /**
- 初始化方法
+ 初始化方法 (此初始化方法能实现按钮的基本样式控制)
  @param frame frame
  @param buttonConfig 按钮配置文件
  */
 - (instancetype)initWithFrame:(CGRect)frame ButtonConfig:(JMBaseButtonConfig *)buttonConfig;
+/**
+ 点击事件 (该点击事件仅支持 initWithFrame: ButtonConfig: 的初始化方式) 如上
+ @param target 事件目标
+ @param action 事件方法
+ @param controlEvents 事件类型
+ */
+- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 
 /**
- 初始化方法 (次初始化方法需要自己设定样式以及事件处理, 可高度自定义, 自定义view不支持角标属性)
+ 初始化方法 (此初始化方法需要自己设定样式以及事件处理, 可高度自定义, 自定义view不支持角标属性)
  @param frame frame
  @param customView 自定义的View
  */
 - (instancetype)initWithFrame:(CGRect)frame CustomView:(UIView *)customView;
 
 
+
 /**
- 点击事件
- @param target 事件目标
- @param action 事件方法
- @param controlEvents 事件类型
+ 初始化方法 (此初始化方法用于显示计数器的效果, 类似于 饿了吗 淘宝 京东 等商品的加减)
+ @param frame frame
+ @param numberButtonConfig 计数器按钮配置文件
+ @return JMButton || JMNumberButton
  */
-- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+- (instancetype)initWithFrame:(CGRect)frame NumberButtonConfig:(JMNumberButtonConfig *)numberButtonConfig;
+
+
 
 
 

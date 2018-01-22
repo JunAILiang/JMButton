@@ -37,6 +37,12 @@
 
 @implementation JMButton
 
+- (instancetype)initWithFrame:(CGRect)frame NumberButtonConfig:(JMNumberButtonConfig *)numberButtonConfig {
+    if (self = [super initWithFrame:frame]) {
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame CustomView:(UIView *)customView {
     if (self = [super initWithFrame:frame]) {
         [self addSubview:customView];

@@ -22,9 +22,7 @@
  */
 
 #import "JMBadgeViewController.h"
-#import "JMButton.h"
-#import "JMDefine.h"
-#import "UIView+JM.h"
+#import "JMButtons.h"
 
 @interface JMBadgeViewController ()
 

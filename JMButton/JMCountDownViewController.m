@@ -22,9 +22,7 @@
  */
 
 #import "JMCountDownViewController.h"
-#import "JMButton.h"
-#import "JMDefine.h"
-#import "UIView+JM.h"
+#import "JMButtons.h"
 
 @interface JMCountDownViewController ()
 

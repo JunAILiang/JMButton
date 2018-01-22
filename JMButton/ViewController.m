@@ -14,6 +14,7 @@
 #import "JMBootstrapViewController.h"
 #import "JMCountDownViewController.h"
 #import "JMCustomViewController.h"
+#import "JMNumberViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,7 +32,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式",@"倒计时按钮功能",@"自定义View", nil];
+    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式",@"倒计时按钮功能",@"自定义View",@"高度自定制计数器按钮", nil];
     
     [self.view addSubview:self.tableView];
     
@@ -83,6 +84,9 @@
     } else if (indexPath.row == 4) {
         JMCustomViewController *customVC = [[JMCustomViewController alloc] init];
         [self.navigationController pushViewController:customVC animated:YES];
+    } else if (indexPath.row == 5) {
+        JMNumberViewController *numberVC = [[JMNumberViewController alloc] init];
+        [self.navigationController pushViewController:numberVC animated:YES];
     }
 }
 
