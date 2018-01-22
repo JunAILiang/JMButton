@@ -39,6 +39,7 @@
     
     //默认样式
     JMNumberButtonConfig *buttonConfig = [JMNumberButtonConfig buttonConfig];
+    buttonConfig.shakeAnimation = YES;
     JMNumberButton *numberBtn = [[JMNumberButton alloc] initWithFrame:CGRectMake(50, 100, 120, 40) NumberButtonConfig:buttonConfig];
     [self.view addSubview:numberBtn];
     
