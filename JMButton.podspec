@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary      = "超强自定义Button"
 
   s.description  = <<-DESC
-  					* 新增水波纹按钮点击效果
+  					新增
                    DESC
 
   s.homepage     = "https://github.com/JunAILiang/JMButton.git"
