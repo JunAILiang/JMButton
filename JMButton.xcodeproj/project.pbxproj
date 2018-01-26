@@ -12,6 +12,9 @@
 		CB1862DA2010B38D001C4120 /* JMNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1862D92010B38D001C4120 /* JMNumberViewController.m */; };
 		CB2FE55520061CAA001C4A14 /* JMBootstrapButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2FE55420061CAA001C4A14 /* JMBootstrapButtonConfig.m */; };
 		CB2FE55820061CD2001C4A14 /* JMBootstrapButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2FE55720061CD2001C4A14 /* JMBootstrapButton.m */; };
+		CB38A2B62016E1C1001F6EF0 /* JMWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2B52016E1C1001F6EF0 /* JMWaveButton.m */; };
+		CB38A2B92016E20D001F6EF0 /* JMWaveButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2B82016E20D001F6EF0 /* JMWaveButtonConfig.m */; };
+		CB38A2BC2016F885001F6EF0 /* JMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */; };
 		CB49FE0E20060FEB00FCCBD7 /* JMBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */; };
 		CB6F2FDC200EEEA1004E46A5 /* JMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F2FD9200EEEA1004E46A5 /* JMBaseButton.m */; };
 		CB6F2FDD200EEEA1004E46A5 /* JMBaseButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F2FDB200EEEA1004E46A5 /* JMBaseButtonConfig.m */; };
@@ -44,6 +47,12 @@
 		CB2FE55420061CAA001C4A14 /* JMBootstrapButtonConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButtonConfig.m; sourceTree = "<group>"; };
 		CB2FE55620061CD2001C4A14 /* JMBootstrapButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBootstrapButton.h; sourceTree = "<group>"; };
 		CB2FE55720061CD2001C4A14 /* JMBootstrapButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButton.m; sourceTree = "<group>"; };
+		CB38A2B42016E1C1001F6EF0 /* JMWaveButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMWaveButton.h; sourceTree = "<group>"; };
+		CB38A2B52016E1C1001F6EF0 /* JMWaveButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMWaveButton.m; sourceTree = "<group>"; };
+		CB38A2B72016E20D001F6EF0 /* JMWaveButtonConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMWaveButtonConfig.h; sourceTree = "<group>"; };
+		CB38A2B82016E20D001F6EF0 /* JMWaveButtonConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMWaveButtonConfig.m; sourceTree = "<group>"; };
+		CB38A2BA2016F885001F6EF0 /* JMWaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMWaveViewController.h; sourceTree = "<group>"; };
+		CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMWaveViewController.m; sourceTree = "<group>"; };
 		CB49FE0C20060FEA00FCCBD7 /* JMBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBasicViewController.h; sourceTree = "<group>"; };
 		CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBasicViewController.m; sourceTree = "<group>"; };
 		CB6F2FD8200EEEA1004E46A5 /* JMBaseButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseButtonConfig.h; sourceTree = "<group>"; };
@@ -117,6 +126,17 @@
 			path = BootstrapButton;
 			sourceTree = "<group>";
 		};
+		CB38A2B32016E1AB001F6EF0 /* WaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				CB38A2B42016E1C1001F6EF0 /* JMWaveButton.h */,
+				CB38A2B52016E1C1001F6EF0 /* JMWaveButton.m */,
+				CB38A2B72016E20D001F6EF0 /* JMWaveButtonConfig.h */,
+				CB38A2B82016E20D001F6EF0 /* JMWaveButtonConfig.m */,
+			);
+			path = WaveButton;
+			sourceTree = "<group>";
+		};
 		CB6F2FD7200EEEA1004E46A5 /* BaseButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +184,8 @@
 				CB6F2FF2200F2FA9004E46A5 /* JMCustomViewController.m */,
 				CB1862D82010B38D001C4120 /* JMNumberViewController.h */,
 				CB1862D92010B38D001C4120 /* JMNumberViewController.m */,
+				CB38A2BA2016F885001F6EF0 /* JMWaveViewController.h */,
+				CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */,
 				CBA664C1200360DD009F12D3 /* Main.storyboard */,
 				CBA664C4200360DD009F12D3 /* Assets.xcassets */,
 				CBA664C6200360DD009F12D3 /* LaunchScreen.storyboard */,
@@ -176,6 +198,7 @@
 		CBC4461A2003628600A2ACD2 /* JMButton */ = {
 			isa = PBXGroup;
 			children = (
+				CB38A2B32016E1AB001F6EF0 /* WaveButton */,
 				CB1862CE2010AB22001C4120 /* NumberButton */,
 				CB6F2FD7200EEEA1004E46A5 /* BaseButton */,
 				CB2FE54F20061C68001C4A14 /* BootstrapButton */,
@@ -294,9 +317,12 @@
 				CB1862D42010ABC3001C4120 /* JMNumberButtonConfig.m in Sources */,
 				CB6F2FEA200F06E8004E46A5 /* JMBaseButton+CountDown.m in Sources */,
 				CBA664CB200360DD009F12D3 /* main.m in Sources */,
+				CB38A2BC2016F885001F6EF0 /* JMWaveViewController.m in Sources */,
 				CB6F2FF3200F2FA9004E46A5 /* JMCustomViewController.m in Sources */,
 				CB1862DA2010B38D001C4120 /* JMNumberViewController.m in Sources */,
 				CBA664BD200360DD009F12D3 /* AppDelegate.m in Sources */,
+				CB38A2B62016E1C1001F6EF0 /* JMWaveButton.m in Sources */,
+				CB38A2B92016E20D001F6EF0 /* JMWaveButtonConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

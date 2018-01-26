@@ -52,13 +52,15 @@
 
 - (instancetype)initWithFrame:(CGRect)frame ButtonConfig:(JMBaseButtonConfig *)buttonConfig {
     if (self = [super initWithFrame:frame]) {
-        self.baseButton.backgroundColor = buttonConfig.backgroundColor;
-        self.baseButton.tag = self.tag;
         if ([buttonConfig isMemberOfClass:[JMBaseButtonConfig class]]) {
             self.baseButton = [[JMBaseButton alloc] initWithFrame:self.bounds ButtonConfig:buttonConfig];
         } else if ([buttonConfig isMemberOfClass:[JMBootstrapButtonConfig class]]) {
             self.baseButton = [[JMBootstrapButton alloc] initWithFrame:self.bounds ButtonConfig:buttonConfig];
+        } else if ([buttonConfig isMemberOfClass:[JMWaveButtonConfig class]]) {
+            self.baseButton = [[JMWaveButton alloc] initWithFrame:self.bounds ButtonConfig:buttonConfig];
         }
+        self.baseButton.tag = self.tag;
+
         
         if (buttonConfig.cornerRadius != 0) {
             if (buttonConfig.corners == UIRectCornerAllCorners) {

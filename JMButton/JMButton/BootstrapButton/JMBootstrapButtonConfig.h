@@ -25,6 +25,7 @@
 #import "JMBaseButtonConfig.h"
 
 typedef NS_ENUM(NSInteger, JMBootstrapType) {
+    JMBootstrapTypeNone, //none
     JMBootstrapTypeDefault, //Default
     JMBootstrapTypePrimary, //Primary
     JMBootstrapTypeSuccess, //Success

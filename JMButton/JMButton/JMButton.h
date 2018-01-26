@@ -29,6 +29,8 @@
 #import "JMBootstrapButton.h"
 #import "JMBootstrapButtonConfig.h"
 #import "JMNumberButtonConfig.h"
+#import "JMWaveButton.h"
+#import "JMWaveButtonConfig.h"
 
 @interface JMButton : UIView
 

@@ -27,7 +27,7 @@
 
 @implementation JMBootstrapButton
 
-+ (instancetype)buttonFrame:(CGRect)frame ButtonConfig:(JMBaseButtonConfig *)buttonConfig {
++ (instancetype)buttonFrame:(CGRect)frame ButtonConfig:(JMBootstrapButtonConfig *)buttonConfig {
     return [[self alloc] initWithFrame:frame ButtonConfig:buttonConfig];
 }
 
