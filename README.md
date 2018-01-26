@@ -8,7 +8,7 @@
 * 支持CocoaPods
 
 # 一张图让你看懂JMButton结构
-![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButtonAll.png)
+![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButtonAll.png)
 
 # 版本
 * 2018-01-22 新增计数器功能 (仿淘宝, 京东, 美团, 饿了吗, 百度外卖 计数功能)
@@ -16,7 +16,7 @@
 * 2018-01-16 初始版本
 
 # 演示
-![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton.gif) ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton1.gif) ![](https://github.com/JunAILiang/JMButton/raw/master/JMButton/gif/JMButton2.gif)
+![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton.gif) ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton1.gif) ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton2.gif)
 
 # 基本按钮如何使用, 以Bootstrap样式为例
 * 通过CocoaPods导入 `pod 'JMButton', '~> 0.3'`
