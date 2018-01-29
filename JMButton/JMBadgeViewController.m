@@ -57,7 +57,7 @@
         buttonConfig.backgroundColor = kRandomColor;
         buttonConfig.titleFont = [UIFont systemFontOfSize:20.f];
         if (i >= 0 && i <= 11) {
-            buttonConfig.title = [NSString stringWithFormat:@"样式%zd",i];
+            buttonConfig.title = [NSString stringWithFormat:@"样式%d",i];
         } else if (i == 12) {
             buttonConfig.titleFont = [UIFont systemFontOfSize:14.f];
             buttonConfig.title = @"自定义样式1";

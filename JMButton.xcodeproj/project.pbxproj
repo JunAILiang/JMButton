@@ -15,6 +15,8 @@
 		CB38A2B62016E1C1001F6EF0 /* JMWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2B52016E1C1001F6EF0 /* JMWaveButton.m */; };
 		CB38A2B92016E20D001F6EF0 /* JMWaveButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2B82016E20D001F6EF0 /* JMWaveButtonConfig.m */; };
 		CB38A2BC2016F885001F6EF0 /* JMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */; };
+		CB42C3BF201C147200F41361 /* JMRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42C3BE201C147200F41361 /* JMRadioButton.m */; };
+		CB42C3C2201C29DE00F41361 /* JMRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42C3C1201C29DE00F41361 /* JMRadioViewController.m */; };
 		CB49FE0E20060FEB00FCCBD7 /* JMBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */; };
 		CB6F2FDC200EEEA1004E46A5 /* JMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F2FD9200EEEA1004E46A5 /* JMBaseButton.m */; };
 		CB6F2FDD200EEEA1004E46A5 /* JMBaseButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F2FDB200EEEA1004E46A5 /* JMBaseButtonConfig.m */; };
@@ -53,6 +55,10 @@
 		CB38A2B82016E20D001F6EF0 /* JMWaveButtonConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMWaveButtonConfig.m; sourceTree = "<group>"; };
 		CB38A2BA2016F885001F6EF0 /* JMWaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMWaveViewController.h; sourceTree = "<group>"; };
 		CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMWaveViewController.m; sourceTree = "<group>"; };
+		CB42C3BD201C147200F41361 /* JMRadioButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRadioButton.h; sourceTree = "<group>"; };
+		CB42C3BE201C147200F41361 /* JMRadioButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRadioButton.m; sourceTree = "<group>"; };
+		CB42C3C0201C29DE00F41361 /* JMRadioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRadioViewController.h; sourceTree = "<group>"; };
+		CB42C3C1201C29DE00F41361 /* JMRadioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRadioViewController.m; sourceTree = "<group>"; };
 		CB49FE0C20060FEA00FCCBD7 /* JMBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBasicViewController.h; sourceTree = "<group>"; };
 		CB49FE0D20060FEA00FCCBD7 /* JMBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBasicViewController.m; sourceTree = "<group>"; };
 		CB6F2FD8200EEEA1004E46A5 /* JMBaseButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseButtonConfig.h; sourceTree = "<group>"; };
@@ -137,6 +143,15 @@
 			path = WaveButton;
 			sourceTree = "<group>";
 		};
+		CB42C3BC201C144A00F41361 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				CB42C3BD201C147200F41361 /* JMRadioButton.h */,
+				CB42C3BE201C147200F41361 /* JMRadioButton.m */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
 		CB6F2FD7200EEEA1004E46A5 /* BaseButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +201,8 @@
 				CB1862D92010B38D001C4120 /* JMNumberViewController.m */,
 				CB38A2BA2016F885001F6EF0 /* JMWaveViewController.h */,
 				CB38A2BB2016F885001F6EF0 /* JMWaveViewController.m */,
+				CB42C3C0201C29DE00F41361 /* JMRadioViewController.h */,
+				CB42C3C1201C29DE00F41361 /* JMRadioViewController.m */,
 				CBA664C1200360DD009F12D3 /* Main.storyboard */,
 				CBA664C4200360DD009F12D3 /* Assets.xcassets */,
 				CBA664C6200360DD009F12D3 /* LaunchScreen.storyboard */,
@@ -198,6 +215,7 @@
 		CBC4461A2003628600A2ACD2 /* JMButton */ = {
 			isa = PBXGroup;
 			children = (
+				CB42C3BC201C144A00F41361 /* RadioButton */,
 				CB38A2B32016E1AB001F6EF0 /* WaveButton */,
 				CB1862CE2010AB22001C4120 /* NumberButton */,
 				CB6F2FD7200EEEA1004E46A5 /* BaseButton */,
@@ -254,7 +272,7 @@
 		CBA664B0200360DD009F12D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = JM;
 				TargetAttributes = {
 					CBA664B7200360DD009F12D3 = {
@@ -304,6 +322,7 @@
 				CBC446232003648E00A2ACD2 /* JMRuntime.m in Sources */,
 				CB1862D72010AD04001C4120 /* JMNumberButton.m in Sources */,
 				CB2FE55520061CAA001C4A14 /* JMBootstrapButtonConfig.m in Sources */,
+				CB42C3BF201C147200F41361 /* JMRadioButton.m in Sources */,
 				CB49FE0E20060FEB00FCCBD7 /* JMBasicViewController.m in Sources */,
 				CB2FE55820061CD2001C4A14 /* JMBootstrapButton.m in Sources */,
 				CBC446242003648E00A2ACD2 /* UIView+JM.m in Sources */,
@@ -315,6 +334,7 @@
 				CBA664C0200360DD009F12D3 /* ViewController.m in Sources */,
 				CB9CDA5B200BA57B0029D42F /* UIColor+JM.m in Sources */,
 				CB1862D42010ABC3001C4120 /* JMNumberButtonConfig.m in Sources */,
+				CB42C3C2201C29DE00F41361 /* JMRadioViewController.m in Sources */,
 				CB6F2FEA200F06E8004E46A5 /* JMBaseButton+CountDown.m in Sources */,
 				CBA664CB200360DD009F12D3 /* main.m in Sources */,
 				CB38A2BC2016F885001F6EF0 /* JMWaveViewController.m in Sources */,
@@ -362,6 +382,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -369,6 +390,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -417,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -424,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -456,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RL8S7JFUQ;
 				INFOPLIST_FILE = JMButton/Info.plist;
@@ -471,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RL8S7JFUQ;
 				INFOPLIST_FILE = JMButton/Info.plist;

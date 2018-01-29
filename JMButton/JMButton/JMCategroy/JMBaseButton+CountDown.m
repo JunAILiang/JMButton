@@ -9,9 +9,7 @@
 #import "JMBaseButton+CountDown.h"
 #import <objc/runtime.h>
 
-static NSInteger times;
-static NSString *curTitle;
-static NSTimer *timer;
+static NSString *yasinTempText;
 static NSString *details;
 
 static const void *cdbKey = @"cdbKey";
@@ -48,38 +46,67 @@ static const void *cddbwKey = @"cddbwKey";
 
 
 
-- (void)startCountDown:(NSInteger)time {
-    times = time;
-    curTitle = self.currentTitle;
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.f target:self selector:@selector(startTime) userInfo:nil repeats:YES];
+- (void)startCountDown:(int)time {
+    [self initButtonData];
+    
+    [self startTime:time];
 }
 
-- (void)startCountDown:(NSInteger)time Detail:(NSString *)detail {
+- (void)startCountDown:(int)time Detail:(NSString *)detail {
     details = detail;
     [self startCountDown:time];
 }
 
-- (void)startTime {
-    if (times == 0) {
-        self.userInteractionEnabled = YES;
-        [self setTitle:curTitle forState:UIControlStateNormal];
-        self.backgroundColor = self.countDownDoneBackground ? self.countDownDoneBackground : self.backgroundColor;
-        self.layer.borderColor = self.countDownDoneBorderColor ? self.countDownDoneBorderColor.CGColor : self.layer.borderColor;
-        [timer invalidate];
-    } else {
-        self.userInteractionEnabled = NO;
-        self.backgroundColor = self.countDownBackground ? self.countDownBackground : self.backgroundColor;
-        self.layer.borderColor = self.countDownBorderColor ? self.countDownBorderColor.CGColor : self.layer.borderColor;
-        if (details) {
-            [self setTitle:[NSString stringWithFormat:@"%zd%@",times, details] forState:UIControlStateNormal];
-        } else {
-            [self setTitle:[NSString stringWithFormat:@"%zd秒重新获取",times] forState:UIControlStateNormal];
-        }
-    }
-    times--;
-
+- (void)initButtonData{
+    
+    yasinTempText = [NSString stringWithFormat:@"%@",self.titleLabel.text];
+    
 }
 
-
+- (void)startTime:(int)time{
+    
+    __block int timeout = time;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0 * NSEC_PER_SEC, 0);
+    
+    dispatch_source_set_event_handler(_timer, ^{
+        
+        //倒计时结束
+        if(timeout <= 0){
+            
+            dispatch_source_cancel(_timer);
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [self setTitle:yasinTempText forState:UIControlStateNormal];
+                self.userInteractionEnabled = YES;
+                
+            });
+            
+        }else{
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (details) {
+                    [self setTitle:[NSString stringWithFormat:@"%02d%@",timeout, details] forState:UIControlStateNormal];
+                } else {
+                    [self setTitle:[NSString stringWithFormat:@"%02d秒重新获取",timeout] forState:UIControlStateNormal];
+                }
+                self.userInteractionEnabled = NO;
+                
+            });
+            
+            timeout --;
+            
+        }
+        
+    });
+    
+    dispatch_resume(_timer);
+    
+}
 
 @end

@@ -16,6 +16,7 @@
 #import "JMCustomViewController.h"
 #import "JMNumberViewController.h"
 #import "JMWaveViewController.h"
+#import "JMRadioViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,7 +34,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式",@"倒计时按钮功能",@"自定义View",@"高度自定制计数器按钮",@"按钮水波点击效果", nil];
+    self.dataArr = [NSMutableArray arrayWithObjects:@"系统默认样式",@"带角标的样式",@"Bootstrap样式",@"倒计时按钮功能",@"自定义View",@"高度自定制计数器按钮",@"按钮水波点击效果",@"Radio按钮", nil];
     
     [self.view addSubview:self.tableView];
     
@@ -91,6 +92,9 @@
     } else if (indexPath.row == 6) {
         JMWaveViewController *waveVC = [[JMWaveViewController alloc] init];
         [self.navigationController pushViewController:waveVC animated:YES];
+    } else if (indexPath.row == 7) {
+        JMRadioViewController *radioVC = [[JMRadioViewController alloc] init];
+        [self.navigationController pushViewController:radioVC animated:YES];
     }
 }
 

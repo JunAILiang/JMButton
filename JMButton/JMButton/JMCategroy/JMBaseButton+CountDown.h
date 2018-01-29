@@ -13,14 +13,15 @@
  开始倒计时
  @param time 倒计时时间
  */
-- (void)startCountDown:(NSInteger)time;
+- (void)startCountDown:(int)time;
 
 /**
  开始倒计时
  @param time 倒计时时间
  @param detail 文字描述 (默认是  **秒后重新获取)
  */
-- (void)startCountDown:(NSInteger)time Detail:(NSString *)detail;
+- (void)startCountDown:(int)time Detail:(NSString *)detail;
+
 
 /** 倒计时中背景颜色(默认 不设置) */
 @property (nonatomic, strong) UIColor *countDownBackground;
