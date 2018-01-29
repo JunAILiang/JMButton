@@ -12,6 +12,7 @@
 ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButtonAll.png)
 
 # 版本
+* 2018-01-29 修复按钮倒计时功能
 * 2018-01-26 新增水波纹点击效果
 * 2018-01-22 新增计数器功能 (仿淘宝, 京东, 美团, 饿了吗, 百度外卖 计数功能)
 * 2018-01-17 新增自定义View, 新增倒计时功能  
@@ -21,7 +22,7 @@
 ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton.gif) ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton1.gif) ![](https://github.com/JunAILiang/JMAllGif/raw/master/JMButton/JMButton2.gif)
 
 # 基本按钮如何使用, 以Bootstrap样式为例
-* 通过CocoaPods导入 `pod 'JMButton', '~> 0.4'`
+* 通过CocoaPods导入 `pod 'JMButton', '~> 0.5'`
 * 手动导入 直接下载工程把 `JMButton` 文件夹导入到自己工程中
 1. 导入JMButtons`#import "JMButtons.h"`，
 2. 初始化JMBootstrapButtonConfig并配置属性
