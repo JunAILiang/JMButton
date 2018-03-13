@@ -3,11 +3,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMButton"
-  s.version      = "0.5"
+  s.version      = "0.6"
   s.summary      = "超强自定义Button"
 
   s.description  = <<-DESC
-  					修复倒计时功能
+  					修复设置tag值无效问题
                    DESC
 
   s.homepage     = "https://github.com/JunAILiang/JMButton.git"
