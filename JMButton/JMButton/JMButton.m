@@ -59,8 +59,6 @@
         } else if ([buttonConfig isMemberOfClass:[JMWaveButtonConfig class]]) {
             self.baseButton = [[JMWaveButton alloc] initWithFrame:self.bounds ButtonConfig:buttonConfig];
         }
-        self.baseButton.tag = self.tag;
-
         
         if (buttonConfig.cornerRadius != 0) {
             if (buttonConfig.corners == UIRectCornerAllCorners) {
@@ -92,11 +90,13 @@
     return self;
 }
 
+- (void)setTag:(NSInteger)tag {
+    self.baseButton.tag = tag;
+}
+
 - (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
     [self.baseButton addTarget:target action:action forControlEvents:controlEvents];
 }
-
-
 
 - (void)showPointBadgeValue {
     [self setupBadgeValueType:JMBadgeValueTypePoint];
